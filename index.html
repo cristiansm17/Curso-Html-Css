@@ -2,10 +2,11 @@
 
 <html lang="es">
 	<head>
-		<title>Web de Cristian curso</title>
+		<title>App de Gatos</title>
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <h1> App de Gatos</h1>
+    <h2> App de Gatos</h2>
     <main>
 	    <h3>Imágenes de gatos</h3>
 	
@@ -15,37 +16,78 @@
       <a href="#pa3">Párrafo 3</a>
       <a href="#pa4">Párrafo 4</a>
 
-      <img src="img/lasana.jpg" alt="Imagen de una lasaña">
-	  <br> <br> <br> <br> <br>
+      <div>
+        <p>Cosas que los gatos <em>aman</em>:</p>
+        <ul>
+          <li>Mentan gatuna</li>
+          <li>Láseres</li>
+          <li><s>Lasaña</s></li>
+        </ul>
+
+        <img src="img/lasana.jpg" alt="Imagen de una lasaña">
+
+        <p>Cosas que los gatos <strong>odian</strong>:</p>
+        <ol>
+          <li>Tratamientos antipulgas</li>
+          <li>Truenos</li>
+          <li>Otros gatos</li>
+        </ol>
+      </div>
 	    
       <h3 id="pa1">Párrafo 1</h3>
 
       <p>Esto es un párrafo de texto para probar enlaces que llevan a una parte de la página.</p>
-	<br> <br> <br> <br> <br>
+
 	
       <h3 id="pa2">Párrafo 2</h3>
 
       <p>Esto es un párrafo de texto para probar enlaces que llevan a una parte de la página.</p>
-	<br> <br> <br> <br> <br>
+
 
       <h3 id="pa3">Párrafo 3</h3>
 
       <p>Esto es un párrafo de texto para probar enlaces que llevan a una parte de la página.</p>
-	<br> <br> <br> <br> <br>
 	    
       <h3 id="pa4">Párrafo 4</h3>
 
       <p>Esto es un párrafo de texto para probar enlaces que llevan a una parte de la página.</p>
     
+      <p><b>¿Cómo es tu gato?</b></p>
+      <form action="/enviar-respuesta">
+      <!--Casillas de verificación -->
+
+      <label for="o1.1">
+        <input value="Carinoso" name="personalidad" id="o1.1" type="checkbox">Cariñoso
+      </label> <br>
+
+      <label for="o2.1">
+        <input value="Perezoso" name="personalidad" id="o2.1" type="checkbox">Perezoso
+      </label> <br>
+
+      <label for="o3.1">
+        <input value="Energenico" name="personalidad" id="o3.1" type="checkbox">Energénico
+      </label> <br>
+
+      <p><b>¿Qué prefiere tu gato?</b></p>
+      <!--Botones de radio -->
+        <label for="o1.2">
+          <input value="Interior" name="Opciones" id="o1.2" type="radio" >Interior
+        </label> <br>
+
+        <label for="o2.2">
+          <input value="Exterior" name="Opciones" id="o2.2" type="radio" >Exterior
+        </label> <br> <br>
+
+        <input type="text" placeholder="URL de la foto de tu gato" required> 
+        <button type="submit">Enviar</button>
+      </form>
     
     </main>
 	<!--Esta etiqueta es para hace run comentario en el código que no se va a ver en la página -->
 	<!--Con alt + z podemos ajustar el código dentro del editor-->
-
+    <footer>
+      <small> <p>Sin derechos de Autor - <a href="https://www.freecodecamp.org/" target="_blank">Freecodecamp.org</a></p></small>
+    </footer>
 
 	</body>
-
-
-
 </html>
-
